@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Color Picker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="app">
+    <h1>RGB - CMYK - HLS</h1>
+
+    <div class="color-model">
+      <h2>RGB Model</h2>
+      <label for="r">R</label>
+      <input class="rgb" type="range" id="r" min="0" max="255" value="255">
+      <input class="rgb-value" type="number" id="r-value" min="0" max="255" value="255">
+
+      <label for="g">G</label>
+      <input class="rgb" type="range" id="g" min="0" max="255" value="255">
+      <input class="rgb-value" type="number" id="g-value" min="0" max="255" value="255">
+
+      <label for="b">B</label>
+      <input class="rgb" type="range" id="b" min="0" max="255" value="255">
+      <input class="rgb-value" type="number" id="b-value" min="0" max="255" value="255">
+    </div>
+
+    <div class="color-model">
+      <h2>CMYK Model</h2>
+      <label for="c">C</label>
+      <input class="cmyk" type="range" id="c" min="0" max="100" value="0">
+      <input class="cmyk-value" type="number" id="c-value" min="0" max="100" value="0">
+
+      <label for="m">M</label>
+      <input class="cmyk" type="range" id="m" min="0" max="100" value="0">
+      <input class="cmyk-value" type="number" id="m-value" min="0" max="100" value="0">
+
+      <label for="y">Y</label>
+      <input class="cmyk" type="range" id="y" min="0" max="100" value="0">
+      <input class="cmyk-value" type="number" id="y-value" min="0" max="100" value="0">
+
+      <label for="k">K</label>
+      <input class="cmyk" type="range" id="k" min="0" max="100" value="0">
+      <input class="cmyk-value" type="number" id="k-value" min="0" max="100" value="0">
+    </div>
+
+    <div class="color-model">
+      <h2>HLS Model</h2>
+      <label for="h">H</label>
+      <input class="hls" type="range" id="h" min="0" max="359" value="0">
+      <input class="hls-value" type="number" id="h-value" min="0" max="359" value="0">
+
+      <label for="l">L</label>
+      <input class="hls" type="range" id="l" min="0" max="100" value="50">
+      <input class="hls-value" type="number" id="l-value" min="0" max="100" value="50">
+
+      <label for="s">S</label>
+      <input class="hls" type="range" id="s" min="0" max="100" value="100">
+      <input class="hls-value" type="number" id="s-value" min="0" max="100" value="100">
+    </div>
+
+
+
+    <h2 class="lable-picker" for="color">Color: </h2>
+    <input class="color-picker" type="color" id="color-picker" name="color-picker" value="#ffffff">
+
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/chroma-js/2.1.0/chroma.min.js"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>
